@@ -8,32 +8,6 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    <!-- <h1 style="color: #aaa ;">
-        Hello world
-    </h1>
-    <form action="https://echo.htmlacademy.ru">
-        <div class="form-box">
-            <label for="ice-cream-plombir">
-                Plombir
-            </label>
-            <input type="checkbox" id="ice-cream-plombir" name="ice-cream-plombir" value="plombir" checked disabled>
-        </div>
-        <div class="form-box">
-            <label for="chocolate">
-                Chocolate
-            </label>
-            <input type="checkbox" id="chocolate" name="chocolate" value="chocolate">
-        </div>
-        <div class="radio">
-            <label for="1kg">
-                1kg
-            </label>
-            <input type="radio" name="1kg" id="1kg" value="1kg">
-        </div>
-        <button type="submit">
-            Forward
-        </button>
-    </form> -->
     <main>
         <section>
             <div class="container">
@@ -51,17 +25,29 @@
                     </div>
                     <div class="child-box-right">
                         <a href="#" class="child-right-link">
-                           <strong class="child-right-bold">Try it free 7 days</strong> then $20/mo. thereafter
+                            <strong class="child-right-bold">Try it free 7 days</strong> then $20/mo. thereafter
                         </a>
                         <form action="https://echo.htmlacademy.ru/courses" method="post" autocomplete="off">
                             <input type="text" name="user_name" id="username" 
-                            placeholder="Name" class="input-second" aria-label="username">
+                            placeholder="Name" class="input-second" aria-label="username" minlength="2" maxlength="50" required>
+                            <span class="mini-box" aria-hidden="true">
+                                First Name cannot be empty
+                            </span>
                             <input type="text" name="user_lastname" id="userlastname" 
-                            placeholder="Last Name" class="input-second" aria-label="userlastname">
+                            placeholder="Last Name" class="input-second" aria-label="userlastname" minlength="2" maxlength="50" required>
+                            <span class="mini-box" aria-hidden="true">
+                                First Name cannot be empty
+                            </span>
                             <input type="email" name="user_email" id="useremail" 
-                            placeholder="Email Address" class="input-second" aria-label="useremail">
+                            placeholder="Email Address" class="input-second" aria-label="useremail" minlength="2" maxlength="50" required>
+                            <span class="mini-box" aria-hidden="true">
+                                First Name cannot be empty
+                            </span>
                             <input type="password" name="user_password" id="userpassword" 
-                            placeholder="Password" class="input-second" aria-label="userpassword">
+                            placeholder="Password" class="input-second" aria-label="userpassword" minlength="8" maxlength="50" required>
+                            <span class="mini-box" aria-hidden="true">
+                                First Name cannot be empty
+                            </span>
                             <button type="submit" class="btn">
                                 CLAIM YOUR FREE TRIAL
                             </button>
